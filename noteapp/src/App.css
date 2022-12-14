@@ -1,0 +1,218 @@
+button {
+  margin-left: 10px;
+}
+
+header h1,
+#noteBrief {
+  text-align: center;
+  font-size: 30px;
+}
+
+.signin_block {
+  display: flex;
+  width: 15em;
+  margin: 1em 0;
+}
+
+.login {
+  margin-top: 3em;
+}
+
+.signin_block input {
+  margin: auto 0 auto auto;
+  width: 8em;
+}
+
+#user {
+  font-size: 20px;
+}
+
+#addNote {
+  display: none;
+}
+
+#editNote {
+  visibility: hidden;
+}
+
+#add_box {
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 2em;
+}
+
+#category,
+#contents {
+  padding: 20px;
+}
+
+#addButton,
+#newNoteTitle,
+#newNoteContent,
+#existNoteTitle,
+#existNoteContent,
+#contentTime {
+  width: -webkit-fill-available;
+}
+
+#newNoteContent,
+#existNoteContent {
+  height: 40vh;
+  margin-bottom: 1em;
+}
+
+#addButton,
+#editButton {
+  display: flex;
+  justify-content: right;
+}
+
+#editButton {
+  margin-left: auto;
+}
+
+.login,
+.login_panel,
+.login_profile,
+#displaySection,
+#add_box {
+  display: flex;
+}
+
+.login div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login_panel {
+  margin: 1em 0;
+}
+
+.logout_action {
+  width: 55em;
+  display: flex;
+}
+
+.login_action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#logoutButton {
+  margin: auto 0 auto auto;
+}
+#contents input {
+  margin: 3vh 0;
+}
+
+.active {
+  background-color: #0ff;
+  width: fit-content;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: -webkit-fill-available;
+}
+
+li {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+#icon {
+  height: 5em;
+  margin-right: 1em;
+}
+
+body {
+  margin: auto;
+  max-width: 1080px;
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#category {
+  float: left;
+  width: 15em;
+  height: 35em;
+  border-style: solid;
+}
+
+#contents {
+  float: left;
+  width: 45em;
+  height: 35em;
+  border-style: solid;
+  border-left: none;
+}
+
+/*  ================  Responsive CSS  ================  */
+
+@media screen and (max-width: 1000px) {
+  #contents {
+    overflow: scroll;
+    width: 25em;
+  }
+
+  .logout_action {
+    width: 35em;
+  }
+
+  #heading {
+    width: 35em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #category {
+    width: 35em;
+  }
+
+  #contents {
+    width: 35em;
+    border-style: solid;
+  }
+
+  .logout_action {
+    width: 27em;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #category {
+    width: 25em;
+  }
+
+  #contents {
+    width: 25em;
+    border-style: solid;
+  }
+
+  .logout_action {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #category {
+    width: 17em;
+  }
+
+  #contents {
+    width: 17em;
+    border-style: solid;
+  }
+
+  .logout_action {
+    width: 9em;
+  }
+}
